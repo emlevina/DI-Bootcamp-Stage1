@@ -1,0 +1,19 @@
+.lightpink {
+    background-color: rgb(237, 190, 200);
+    font-family: Verdana, "Dejavu Sans", sans-serif;
+}
+
+.cooler {
+    font-size: 24px;
+}
+
+#id1 {
+    color: rgb(47, 83, 214);
+    font-size: 36px;
+}
+
+#id2 {
+    background-color: rgb(144, 238, 144);
+    font-size: 24px;
+    font-weight: bold;
+}
