@@ -1,0 +1,12 @@
+body {
+    background-color: aqua;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.firstletter {
+    font-size: 2em;
+}
