@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(199, 156, 80);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+div#wrap {
+    background-color: blanchedalmond;
+    width: 600px;
+    margin: 16px auto;
+}
+
+.bordered {
+    margin: -5px 0 0 0;
+    border: 5px dashed black;
+    /* padding: 0px 16px; */
+}
+
+.title {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 0;
+}
+
+.text {
+    padding: 0px 24px;
+}
+
+ul {
+    list-style-type: none;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.firstletter {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.copyright {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+a:link {
+    text-decoration: none;
+}
