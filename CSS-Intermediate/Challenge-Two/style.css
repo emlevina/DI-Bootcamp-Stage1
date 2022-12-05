@@ -1,0 +1,39 @@
+* {
+    margin: 0; 
+}
+
+.col-4, .col-6, .col-12 {
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.col-4 {
+    width: 33%;
+    border: 1px solid red;
+}
+
+.col-6 {
+    width: 50%;
+    border: 1px solid blue;
+}
+
+.col-12 {
+    width: 100%;
+    border: 1px solid green;
+}
+
+@media all and (max-width: 960px){
+    .col-4 {
+        width: 50%;
+    }
+
+    .col-6 {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 765px){
+    .col-4 {
+        width: 100%;
+    }
+}
