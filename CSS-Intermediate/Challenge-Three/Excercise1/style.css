@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 900px;
+    justify-content: space-between;
+}
+
+.leftcolumn {
+    flex: 1 1 25%;
+}
+
+.rightcolumn {
+    flex: 1 1 65%;
+}
+
+.box {
+    height: 50px;
+    margin: 10px;   
+    border: 3px solid rgb(65, 65, 65) 
+}
+
+.redbox {
+    background-color: rgb(234,153,153);
+}
+
+.bluebox {
+    background-color: rgb(159,197,248);
+}
+
+.yellowbox {
+    flex-basis: 100%;
+    background-color: rgb(255,229,153);
+}
