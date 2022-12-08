@@ -1,0 +1,272 @@
+:root {
+    --accent-color:rgb(172, 6, 205);
+    --accent-color-secondary: rgb(172, 6, 205);
+    --white-color:rgba(242, 242, 242, 1);
+    --background-color: rgb(142, 58, 198);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--white-color);
+    background-color: var(--background-color);
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    font-size: 2em;
+    text-shadow: var(--accent-color) -2px 2px;   
+}
+
+h2 {
+    font-family: 'Lora', serif;
+    font-size: 1.6em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Lora', serif;
+    font-size: 0.8em;
+    padding-bottom: 0.8em;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8em;
+}
+
+.scroller {
+    position: relative;
+    height: calc(100vh - 40px);
+    top: 40px;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.section {
+    scroll-snap-align: start;
+    min-height: calc(100vh - 40px);
+    position: relative;
+    display: flex;
+}
+
+.footer {
+    scroll-snap-align: end;
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-color);
+    width: 100%;
+    height: 40px;
+    z-index: 2;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    min-width: 25em;
+    /* max-width: 400px; */
+    text-align: center;
+}
+
+nav a {
+    width: 30%;
+    /* background-color: blue; */
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    padding: 10px 0px;
+    scale: 0.9;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+    scale: 1;
+    font-family: 'Lora', serif;
+}
+
+#tribute {
+    box-shadow: inset 0 0 0 2000px rgba(10, 10, 10, 0.7);
+    background-size: cover;
+    background-image: url(https://the-flow.ru/uploads/images/resize/830x0/adaptiveResize/00/69/72/10/86/3db2aa840cd7.jpg);
+    text-align: center;
+}
+
+#tribute p {
+    font-size: 1em;
+}
+
+#tribute a, #tribute a:visited {
+    color: var(--white-color);
+}
+
+.leftcolumn {
+    flex: 1 1 50%;
+    padding: 20px 0;
+}
+
+#bio p {
+    text-align: justify;
+    font-size: 0.8em;
+}
+
+#bio img {
+    aspect-ratio: 3/4;
+    max-width: 200px;
+    /* height: 100%; */
+    margin-left: 100px;
+    object-fit: cover;
+}
+
+.cardlist {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: stretch;
+    column-gap: 1em;
+    row-gap: 1em;
+    /* width: 90%; */
+}
+
+.card {
+    display: flex;
+    flex: 0 0 20em;
+    padding: 2em;
+    box-shadow: 3px 4px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.imgcontainer {
+    flex: 0 0 35%;
+    max-width: 150px;
+    margin-right: 1em;
+}
+
+#disco .caption {
+    text-align: center;
+    font-size: 0.6em;
+    margin: 0;
+}
+
+ol {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.7em;
+    list-style-position: outside;
+    padding-left: 1.5em;
+}
+
+#disco p {
+    margin-top: 2em;
+    text-align: center;
+}
+
+#disco a{
+    color: white;
+}
+
+footer {
+    /* scroll-snap-align: start; */
+    /* position: relative; */
+    z-index: -5;
+    top: 40px;
+    background-color: var(--accent-color);
+    padding: 1em 3em;
+    font-size: 0.8em;
+    font-family: 'Lato', sans-serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 100,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.arrowdown {
+    font-size: 50px;
+    position: absolute;
+    bottom: 50px;
+    margin: 0 auto;
+    scale: 2;
+    opacity: 0.6;
+}
+
+.width-s {
+    width: 300px;
+}
+
+.width-m {
+    width: 600px;
+}
+
+.width-l{
+    width: 90%;
+}
+
+.flexcolumn {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flexrow {
+    display: flex;
+    margin: auto;
+    flex-flow: row wrap;
+}
+
+
+@media screen and (max-width: 700px){
+    #bio .flexrow {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #bio .flexrow p{
+        width: 50vw;
+    }
+
+    #bio img{
+        margin-left: 0;
+        margin-top: 2em;
+    }
+
+    .section {
+        /* scroll-snap-align: none; */
+    }
+
+}
+
+
+@media screen and (max-width: 30em){
+    .header {
+        display: none;
+    }
+
+    .scroller {
+        height: 100vh;
+        top: 0;
+    }
+    
+    .section {
+        min-height: 100vh;
+    }
+
+
+}
