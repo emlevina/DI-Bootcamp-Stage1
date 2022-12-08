@@ -16,27 +16,27 @@
 
 <body>
     <header class="header">
-        <nav>
-            <a href="#bio">Biography</a>
-            <a href="#tribute">Tribute</a>
-            <a href="#disco">Discography</a>
+        <nav class="navbar">
+            <a href="#bio" class="navbar__link">Biography</a>
+            <a href="#tribute" class="navbar__link">Tribute</a>
+            <a href="#disco" class="navbar__link">Discography</a>
         </nav>
     </header>
     <main class="scroller">
         <section id="tribute" class="section">
-            <div class="flexcolumn width-s">
+            <div class="flex flex--column flex--width-s">
                 <h1>Lisa Monetochka</h1>
-                <p>is a Russian singer, musician, composer and songwriter. </p>
-                <a href="#bio"><i class="material-symbols-outlined arrowdown">
+                <p class="text--bigger">is a Russian singer, musician, composer and songwriter. </p>
+                <a class="arrow-link" href="#bio"><i class="material-symbols-outlined arrowdown">
                         expand_more
                     </i></a>
             </div>
         </section>
         <section id="bio" class="section">
-            <div class="flexrow width-m">
-                <div class="leftcolumn">
+            <div class="flex flex--row flex--width-m">
+                <div class="flex__text">
                     <h2>Biography</h2>
-                    <p>Elizaveta was born on June 1, 1998 in Yekaterinburg. In 2005, Liza entered the first grade at the
+                    <p class="text--justified">Elizaveta was born on June 1, 1998 in Yekaterinburg. In 2005, Liza entered the first grade at the
                         MAOU secondary school No. 32 with in-depth study of individual subjects (music, fine arts,
                         literature, Moscow Art College), where she studied for 9 years, receiving general and musical
                         education in the piano class; in addition, she attended a ballet club. As a child, Lisa wrote
@@ -50,20 +50,21 @@
                         because she would like to have a more or less free schedule to work.
                     </p>
                 </div>
-                <img src="https://m.buro247.ru/images/2018/08/krivobokova/ghcfh.jpg">
+                <img class="flex__img--right" src="https://m.buro247.ru/images/2018/08/krivobokova/ghcfh.jpg">
             </div>
         </section>
         <section id="disco" class="section">
-            <div class="flexcolumn width-l">
+            <div class="flex flex--column flex--width-l">
                 <h2>Discography</h2>
-                <div class="cardlist flexrow">
+                <div class="cardlist">
                     <div class="card">
-                        <div class="imgcontainer">
-                            <p class="caption">EP · 2017</p>
+                        <div class="card__album-cover">
+                            <img class="card__album-img">
+                            <p class="card__caption">EP · 2017</p>
                         </div>
-                        <div class="card-songs">
+                        <div class="card__contents">
                             <h3>Я Лиза</h3>
-                            <ol>
+                            <ol class="card__song-list">
                                 <li>Я Лиза</li>
                                 <li>Виктор Дробыш</li>
                                 <li>Козырный туз</li>
@@ -74,14 +75,14 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="imgcontainer">
-                            <img
+                        <div class="card__album-cover">
+                            <img class="card__album-img"
                                 src="https://is5-ssl.mzstatic.com/image/thumb/Music125/v4/41/b4/e5/41b4e59d-4527-087b-1321-d20fe5fef821/191773100025.jpg/600x600bf-60.jpg">
-                            <p class="caption">EP · 2017</p>
+                            <p class="card__caption">EP · 2017</p>
                         </div>
-                        <div class="card-songs">
+                        <div class="card__contents">
                             <h3>Я Лиза</h3>
-                            <ol>
+                            <ol class="card__song-list">
                                 <li>Я Лиза</li>
                                 <li>Виктор Дробыш</li>
                                 <li>Козырный туз</li>
@@ -92,14 +93,14 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="imgcontainer">
-                            <img
+                        <div class="card__album-cover">
+                            <img class="card__album-img"
                                 src="https://i.discogs.com/VHP32WnEg_kLXeyxAVzs4iH0HLn3AlC191g_XNPNdy0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMDgy/OTc3LTE2MTc4MDk2/MDMtNjcyNC5qcGVn.jpeg">
-                            <p class="caption">Album · 2018</p>
+                            <p class="card__caption">Album · 2018</p>
                         </div>
-                        <div>
+                        <div class="card__contents">
                             <h3>Раскраски для взрослых</h3>
-                            <ol>
+                            <ol class="card__song-list">
                                 <li>Русский Ковчег</li>
                                 <li>Каждый Раз</li>
                                 <li>Нимфоманка</li>
@@ -114,14 +115,14 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="imgcontainer">
-                            <img
+                        <div class="card__album-cover">
+                            <img class="card__album-img"
                                 src="https://i.discogs.com/N7UmMTjzCG8yEpRC-PehHC_TkHaoqfWFQyCglu-xQ1M/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MDAz/MTkxLTE2MTc4MDk2/NjItOTMxNS5qcGVn.jpeg">
-                            <p class="caption">Album · 2020</p>
+                            <p class="card__caption">Album · 2020</p>
                         </div>
-                        <div>
+                        <div class="card__contents">
                             <h3>Декоративно-Прикладное Искусство</h3>
-                            <ol>
+                            <ol class="card__song-list">
                                 <li>Крошка</li>
                                 <li>Папина Любовница</li>
                                 <li>Ириски И Риски</li>
@@ -137,7 +138,7 @@
                         </div>
                     </div>
                 </div>
-                <p>Click here to see <a href="#">more albums by Lisa</a></p>
+                <p class="text--centered">Click here to see <a href="#" class="link--white">more albums by Lisa</a></p>
             </div>
         </section>
         <footer class="footer">
